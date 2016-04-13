@@ -26,7 +26,7 @@ var Header = React.createClass({
 
 ReactDOM.render(
 
-<UserInformation />,
+<Header />,
 document.getElementById('app')
 
 

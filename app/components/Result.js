@@ -94,4 +94,10 @@ return( true );
 
 });
 
-module.exports = Result;
+ReactDOM.render(
+
+<Result />,
+document.getElementById('app')
+
+
+  );
