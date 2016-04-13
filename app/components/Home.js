@@ -114,4 +114,10 @@ return(
 
 });
 
-module.export=Home;
+ReactDOM.render(
+
+<Home />,
+
+document.getElementById('app')
+
+  );
