@@ -15,7 +15,7 @@ render: function()
 return(
 
 <div className= "jumbotron col-sm-6 col-sm-offset-3 text-center" style={divStyle} > 
-             <form name="myForm" onSubmit= {this.Result.js} method="post">
+             <form name="myForm" onSubmit= {this.props.name} method="post">
              
            
             
@@ -116,7 +116,7 @@ return(
 
 ReactDOM.render(
 
-<Home />,
+<Home name="../Result.js "/>,
 document.getElementById('app')
 
 
