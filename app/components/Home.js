@@ -1,5 +1,5 @@
 var React = require('react');
-var ReactRouter = require('react-router');
+//var ReactRouter = require('react-router');
 var Link = ReactRouter.Link;
 
 var divStyle = {
@@ -114,10 +114,4 @@ return(
 
 });
 
-ReactDOM.render(
-
-<Home name="../Result.js "/>,
-document.getElementById('app')
-
-
-  );
+module.exports = Home;

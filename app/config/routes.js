@@ -6,7 +6,6 @@ var IndexRoute = ReactRouter.IndexRoute;
 var hasHistory = ReactRouter.hasHistory;
 var  Main = require ('../components/Main');
 var  Home = require ('../components/Home');
-var  Result = require ('../components/Result');
 var  PromptContainer = require ('../containers/PromptContainer');
 
 
@@ -17,7 +16,7 @@ var routes = (
 <Route path='/'  component= {Main} >
 
    <IndexRoute component={Home}  />
-   <Route path='/Result'  component=(Result) />
+   <Route path='result' component={PromptContainer} />
 
 
 </Route>
