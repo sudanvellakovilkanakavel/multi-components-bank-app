@@ -17,17 +17,14 @@ var Main = React.createClass({
             <h2><font color="orange">CHOOSE YOUR LOAN WISELY </font></h2>
            <h4>An React  App For Calculating Your Monthly Loan Interest in Different Canadian Banks</h4>
            <br /> <br />
+
+           {this.props.children}
            </div>
 
             )
                      }
 
 
-
-ReactDOM.render(
-
-<Main />,
-document.getElementById('app')
-
-
   );
+
+module.exports = Main;

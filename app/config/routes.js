@@ -12,11 +12,12 @@ var  PromptContainer = require ('../containers/PromptContainer');
 
 var routes = (
 
-<Router>
+<Router history={hasHistory}>
 
 <Route path='/'  component= {Main} >
 
-   <Route path= '/home' component={Home}  />
+   <IndexRoute component={Home}  />
+   <Route path='/Result'  component=(Result) />
 
 
 </Route>

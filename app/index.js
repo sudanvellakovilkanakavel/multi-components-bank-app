@@ -4,7 +4,7 @@ var routes = require('./config/routes');
 
 ReactDOM.render(
 
-<routes />,
+routes,
 
 document.getElementById('app')
 
