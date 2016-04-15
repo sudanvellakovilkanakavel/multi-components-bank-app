@@ -114,4 +114,9 @@ return(
 
 });
 
-module.exports = Home;
+ReactDOM.render(
+
+<Home  name='../containers/PromptContainer.js' />
+document.getElementById('app')
+
+  );
