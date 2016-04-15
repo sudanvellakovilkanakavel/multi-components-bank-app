@@ -5,7 +5,7 @@ var ReactDOM = require('react-dom');
 
 
 
-
+var PromptContainer = React.createClass({
 
     render: function () {
 
