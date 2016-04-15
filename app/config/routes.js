@@ -4,27 +4,26 @@ var Router = ReactRouter.Router;
 var Route = ReactRouter.Route;
 var IndexRoute = ReactRouter.IndexRoute;
 var hasHistory = ReactRouter.hasHistory;
-var  Header = require ('../components/Header');
+var  Main = require ('../components/Main');
 var  Home = require ('../components/Home');
 var  Result = require ('../components/Result');
 var  PromptContainer = require ('../containers/PromptContainer');
 
 
-var routes = {
+var routes = (
 
-<Router history = {hashHistory}>
+<Router>
 
+<Route path='/'  component= {Main} >
 
-<IndexRoute component = {Home}  />
-
-
+   <Route path= '/home' component={Home}  />
 
 
 </Route>
 </Router>
 
 
-};
+);
 
 
 module.exports = routes;
