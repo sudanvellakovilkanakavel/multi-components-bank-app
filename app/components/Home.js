@@ -1,5 +1,5 @@
 var React = require('react');
-//var ReactRouter = require('react-router');
+ var ReactRouter = require('react-router');
 var Link = ReactRouter.Link;
 
 var divStyle = {
@@ -15,7 +15,7 @@ render: function()
 return(
 
 <div className= "jumbotron col-sm-6 col-sm-offset-3 text-center" style={divStyle} > 
-             <form name="myForm" onSubmit= {this.props.name} method="post">
+             <form name="myForm" onSubmit= {'../containers/PromptContainer.js'} method="post">
              
            
             
@@ -114,9 +114,4 @@ return(
 
 });
 
-ReactDOM.render(
-
-<Home  name='../containers/PromptContainer.js' />
-document.getElementById('app')
-
-  );
+module.exports = Home;
